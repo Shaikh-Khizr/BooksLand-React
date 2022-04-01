@@ -1,22 +1,23 @@
 import './App.css';
 
-const App = () => {
-  const name = 'Khizr';
-  // const isUserLoggedIN = true;
+const Person = () => {
+  return (
+    <>
+    <h1>Name: Khizr</h1>
+    <h2>Last Name: Shaikh</h2>
+    <h2>Age: 17</h2>
+    </>
+  )
+}
 
+const App = () => {
   return (
     <div className="App">
-      <h1>Hello {2 + 2}!</h1>
-      {name ? (
-      <>
-        <h1>{name}</h1>
-      </>
-      ) : (
-        <>
-          <h1>test</h1>
-          <h2>There is no name</h2>
-        </>
-      )}
+      <Person />
+      <Person />
+      <Person />
+      <Person />
+      <Person />
     </div>
   );
 }
